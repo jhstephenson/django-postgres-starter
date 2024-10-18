@@ -56,7 +56,7 @@ def create_django_project(args):
     create_js_file()
     create_settings_file(main_app_name, module_app_name)
     create_env_file(db_name, db_user, db_password)
-    create_urls_file(module_app_name)
+    create_urls_file(main_app_name, module_app_name)
     create_forms_file(os.path.join(module_app_name, 'forms.py'))
     create_views_file(os.path.join(module_app_name, 'views.py'), module_app_name)
     create_gitignore(os.getcwd())
